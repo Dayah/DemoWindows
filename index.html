@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+ <head>
+  <title>Example of independent display-level and content-level markup</title>
+  <link href="windows.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+
+  <div class="Outer Floating">
+   <div class="Inner Background">
+    <div class="Active Titlebar">
+     <div class="ButtonOuter Right" onClick="this.parentNode.parentNode.parentNode.style.display = 'none'; with (document.styleSheets[0].rules[7].style) { backgroundColor = 'ActiveCaption'; color = 'CaptionText'; }"><div class="ButtonInner Background Close"></div></div>
+     <h1>Welcome</h1>
+    </div>
+    <div class="Area">This is more of an example of how layout and content should be separated than a demonstration of browser compatibility. If you'd like to get the full contrast between layout being turned on and off, view the demo in IE 5 or Navigator 6.</div>
+    <div class="Statusbar">This window can be closed.</div>
+   </div>
+  </div>
+
+  <div class="Outer Left">
+   <div class="Inner Background">
+    <div class="Titlebar">
+     <div class="ButtonOuter Right"><div class="ButtonInner Background Close"></div></div>
+     <div class="ButtonOuter Right" style="margin-right: 2px;"><div class="ButtonInner Background Maximize"></div></div>
+     <div class="ButtonOuter Right"><div class="ButtonInner Background Minimize"></div></div>
+     <h1>Example Description</h1>
+    </div>
+    <div class="Area">I can do either small examples or entire projects&#151;it's difficult to do anything in between. I wanted to make this fully functional with JavaScript and DHTML, but it became too bloated for an example and I removed all interactive functionality. I can come up with original layouts but that takes several days of brainstorming. Much to my surprise, I had an exciting vacation and didn't get a chance to work on this.</div>
+    <div class="Statusbar">Demonstration by Michael Dayah</div>
+   </div>
+  </div>
+
+  <div class="Outer Left" style="clear: left;">
+   <div class="Inner Background">
+    <div class="Titlebar">
+     <div class="ButtonOuter Right"><div class="ButtonInner Background Close"></div></div>
+     <div class="ButtonOuter Right" style="margin-right: 2px;"><div class="ButtonInner Background Maximize"></div></div>
+     <div class="ButtonOuter Right"><div class="ButtonInner Background Minimize"></div></div>
+     <h1>Windows Interface</h1>
+    </div>
+    <div class="Area">This is a fairly efficient rendering of the Windows interface using style sheets and the box model&#151;no tables. There are no real &quot;tricks&quot; (browser-specific markup, exploitation of layout bugs, overlap, etc.) used to accomplish this. To really see the dynamics of the example, try temporarily changing the appearance scheme of a Windows machine in display settings to High Contrast Large or Slate for maximum effect.</div>
+    <div class="Statusbar">E-mail: <a href="mailto:michael@dayah.com">michael@dayah.com</a></div>
+   </div>
+  </div>
+
+  <div class="Outer Right">
+   <div class="Inner Background">
+    <div class="Titlebar">
+     <div class="ButtonOuter Right"><div class="ButtonInner Background Close"></div></div>
+     <div class="ButtonOuter Right" style="margin-right: 2px;"><div class="ButtonInner Background Maximize"></div></div>
+     <div class="ButtonOuter Right"><div class="ButtonInner Background Minimize"></div></div>
+     <h1>Layout Bugs</h1>
+    </div>
+    <div class="Area">Whenever I put together anything I find a ton of layout bugs. Opera seems to have trouble floating an element next to an inline box that doesn't have maximum width. IE5.5 tries to inherit the minimum height of a floating box from a nearby inline element. Macintosh IE5's system font descriptor &quot;caption&quot; contains weight, color, and size, but oddly still violates cascading order (author before browser style sheets). IE5.5 also won't display any absolutely positioned boxes if a margin is set for both left- and right-floating boxes and a clear separates them. All of these have been compensated for except Opera's floating box problem. The <a href="windows.css">style sheet</a> is commented with fixes for the various problems. Of course, the whole point of this exercise is to break the style sheet, so go ahead!</div>
+    <div class="Statusbar">Phone: (865) 919-2099</div>
+   </div>
+  </div>
+
+  <div style="background-color: Menu; position: absolute; bottom: 1%; right: 1%; padding: 0.2ex 0.5ex; border: thin outset; font: caption;" onClick="with (document.styleSheets[0]) { disabled = !disabled; }">Enable/Disable Style Sheet</div>
+
+ </body>
+</html>

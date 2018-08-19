@@ -1,0 +1,86 @@
+BODY {
+	background-color: Background;
+	padding: 1%;
+	margin: 0%;
+}
+.Inner {
+	border: 1px solid;
+	border-color: ThreeDHighlight ThreeDShadow ThreeDShadow ThreeDHighlight;
+	padding: 2px;
+}
+.Outer {
+	border: 1px solid;
+	border-color: ActiveBorder ThreeDDarkShadow ThreeDDarkShadow ActiveBorder;
+}
+.ButtonInner {
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 1px solid;
+	border-color: ThreeDLightShadow ThreeDShadow ThreeDShadow ThreeDLightShadow;
+	font-size: 1px;			/* IE5.5 layout engine bug */
+	height: 97%;
+	width: 97%;
+}
+.ButtonOuter {
+	border: 1px solid;
+	border-color: ThreeDHighlight ThreeDDarkShadow ThreeDDarkShadow ThreeDHighlight;
+	font: caption;
+	height: 1.2em;
+	width: 1.2em;
+}
+.Area {
+	background-color: Window;
+	border: 2px inset;
+	margin-top: 3px;
+	padding: 0.1ex 0.4ex;
+	text-align: justify;
+}
+.Background {
+	background-color: Menu;
+}
+.Titlebar {
+	background-color: InactiveCaption;
+	color: InactiveCaptionText;
+	padding: 2px 2px 2px 0.5ex;
+}
+.Active {
+	background-color: ActiveCaption;
+	color: CaptionText;
+}
+.Statusbar {
+	border: 1px inset;
+	font: status-bar;
+	margin-top: 3px;
+	padding: 0.2ex;
+}
+.Close {
+	background-image: url('Graphics/close.gif');
+}
+.Minimize {
+	background-image: url('Graphics/minimize.gif');
+}
+.Maximize {
+	background-image: url('Graphics/maximize.gif');
+}
+.Left {
+	float: left;
+	width: 58%;
+	margin-bottom: 1%;		/* IE5.5 layout engine bug */
+}
+.Right {
+	float: right;
+}
+.Floating {
+	position: absolute;
+	left: 40%;
+	top: 15%;
+	width: 30%;
+}
+H1 {
+	display: inline;
+	font: caption !important;	/* Mac IE5 layout
+	font-size: 12pt;		   engine bug */
+}
+P {
+	display: inline;
+}
